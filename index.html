@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- أساسيات -->
+<meta name="description" content="Lēna Natural: منتجات عناية طبيعية 100% للبشرة والشعر والجسم، مصنوعة بحب وتوصيل لباب البيت في مصر.">
+<meta name="keywords" content="منتجات طبيعية, عناية بالبشرة, عناية بالشعر, زبدة الجسم, لوشن جلد الوزة, الصابون المغربي, Lena Natural">
+<meta name="author" content="Lēna Natural">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#8e44ad">
+<link rel="canonical" href="https://dr-mai-ahmed.github.io/Lena-Natural-Products/index.html">
+
+<!-- فيسبوك / واتساب (Open Graph) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lēna Natural Products">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:title" content="Lēna Natural | منتجات عناية طبيعية 100%">
+<meta property="og:description" content="اكتشفي سر الجمال الطبيعي: منتجات للبشرة والشعر والجسم مصنوعة بحب.">
+<meta property="og:url" content="https://dr-mai-ahmed.github.io/Lena-Natural-Products/index.html">
+<meta property="og:image" content="https://dr-mai-ahmed.github.io/Lena-Natural-Products/images/og-image.jpg">
+
+<!-- تويتر -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lēna Natural | منتجات عناية طبيعية 100%">
+<meta name="twitter:description" content="منتجات للبشرة والشعر والجسم مصنوعة بحب.">
+<meta name="twitter:image" content="https://dr-mai-ahmed.github.io/Lena-Natural-Products/images/og-image.jpg">
+
+<!-- أيقونة الموقع -->
+<link rel="icon" href="images/lena.jpg">
+    <title>Lena Natural Products | منتجات العناية الطبيعية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement-bar"><p>لينا لبشرة نضرة وشعر صحي</p></div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo"><a href="index.html">Lena <span>Natural</span></a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="header-search-container">
+                    <button type="button" id="searchIconBtn" class="cart-icon-btn" title="بحث" aria-label="بحث"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" id="searchInput" class="search-input" placeholder="ابحثي عن منتج..." aria-label="بحث عن منتج">
+                </div>
+                <button type="button" id="darkModeToggle" class="cart-icon-btn" title="تغيير المظهر" aria-label="تغيير المظهر"><i class="fa-solid fa-moon"></i></button>
+                <a href="checkout.html" class="cart-icon-btn" title="سلة التسوق" aria-label="سلة التسوق">
+                    <i class="fa-solid fa-bag-shopping"></i><span id="cartCount" class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>اكتشفي سر الجمال الطبيعي مع <span>Lena</span></h1>
+            <p>منتجات عناية طبيعية 100% مصنوعة بحب لبشرتك وشعرك لتبقي دائماً متألقة.</p>
+            <a href="#products" class="btn btn-primary">تصفحي المنتجات الآن</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>منتجاتنا المميزة</h2>
+                <p>اختاري القسم المناسب لتصفح المنتجات فوراً</p>
+            </div>
+            <div class="category-boxes-container" id="categoryBoxes">
+            <button type="button" class="big-cat-box active" data-category="all"><i class="fa-solid fa-border-all"></i><h3>كل المنتجات</h3></button>
+            <button type="button" class="big-cat-box" data-category="body"><i class="fa-solid fa-hand-holding-heart"></i><h3>الجسم</h3></button>
+            <button type="button" class="big-cat-box" data-category="beauty"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>مستحضرات تجميلية</h3></button>
+            <button type="button" class="big-cat-box" data-category="hair"><i class="fa-solid fa-seedling"></i><h3>الشعر</h3></button>
+            <button type="button" class="big-cat-box" data-category="sensitive"><i class="fa-solid fa-shield-heart"></i><h3>أماكن حساسة</h3></button>
+            <button type="button" class="big-cat-box" data-category="skin"><i class="fa-solid fa-spa"></i><h3>البشرة</h3></button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+            <!-- ===== الجسم ===== -->
+            <div class="product-card" data-id="1" data-category="body">
+                <a href="product.html?id=1" class="product-img"><img src="images/Body-products/img(2).jpeg" alt="بديل الليزر (زيت السعد) (50 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بديل الليزر (زيت السعد)</h3>
+                <p class="product-size">50 مل</p>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=1" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="1">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%AF%D9%8A%D9%84%20%D8%A7%D9%84%D9%84%D9%8A%D8%B2%D8%B1%20%28%D8%B2%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%29%20%2850%20%D9%85%D9%84%29%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="2" data-category="body">
+                <a href="product.html?id=2" class="product-img"><img src="images/Body-products/img(2).jpeg" alt="بديل الليزر (زيت السعد) (70 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بديل الليزر (زيت السعد)</h3>
+                <p class="product-size">70 مل</p>
+                    <span class="price">170 ج.م</span>
+                    <a href="product.html?id=2" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="2">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%AF%D9%8A%D9%84%20%D8%A7%D9%84%D9%84%D9%8A%D8%B2%D8%B1%20%28%D8%B2%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%29%20%2870%20%D9%85%D9%84%29%20-%20170%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="3" data-category="body">
+                <a href="product.html?id=3" class="product-img"><img src="images/Body-products/img(1).jpeg" alt="لوشن جلد الوزة" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>لوشن جلد الوزة</h3>
+                    <span class="price">110 ج.م</span>
+                    <a href="product.html?id=3" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="3">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%84%D9%88%D8%B4%D9%86%20%D8%AC%D9%84%D8%AF%20%D8%A7%D9%84%D9%88%D8%B2%D8%A9%20-%20110%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="4" data-category="body">
+                <a href="product.html?id=4" class="product-img"><img src="images/Body-products/img(3).jpeg" alt="سكرب تشيز كيك / سكرب القهوة" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>سكرب تشيز كيك / سكرب القهوة</h3>
+                    <span class="price">90 ج.م</span>
+                    <a href="product.html?id=4" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="4">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B3%D9%83%D8%B1%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%20%D9%83%D9%8A%D9%83%20%2F%20%D8%B3%D9%83%D8%B1%D8%A8%20%D8%A7%D9%84%D9%82%D9%87%D9%88%D8%A9%20-%2090%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="5" data-category="body">
+                <a href="product.html?id=5" class="product-img"><img src="images/Body-products/img(4).jpeg" alt="بادي باتر (50 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بادي باتر</h3>
+                <p class="product-size">50 مل</p>
+                    <span class="price">65 ج.م</span>
+                    <a href="product.html?id=5" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="5">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%A7%D8%AF%D9%8A%20%D8%A8%D8%A7%D8%AA%D8%B1%20%2850%20%D9%85%D9%84%29%20-%2065%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="35" data-category="body">
+                <a href="product.html?id=35" class="product-img"><img src="images/Body-products/img(4).jpeg" alt="بادي باتر (100 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بادي باتر</h3>
+                <p class="product-size">100 مل</p>
+                    <span class="price">120 ج.م</span>
+                    <a href="product.html?id=35" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="35">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%A7%D8%AF%D9%8A%20%D8%A8%D8%A7%D8%AA%D8%B1%20%28100%20%D9%85%D9%84%29%20-%20120%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="6" data-category="body">
+                <a href="product.html?id=6" class="product-img"><img src="images/Body-products/img(5).jpeg" alt="سويت لينا بالدلكة" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>سويت لينا بالدلكة</h3>
+                    <span class="price">80 ج.م</span>
+                    <a href="product.html?id=6" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="6">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B3%D9%88%D9%8A%D8%AA%20%D9%84%D9%8A%D9%86%D8%A7%20%D8%A8%D8%A7%D9%84%D8%AF%D9%84%D9%83%D8%A9%20-%2080%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="7" data-category="body">
+                <a href="product.html?id=7" class="product-img"><img src="images/Body-products/img(6).jpeg" alt="التبريمة المغربية (100 جم)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>التبريمة المغربية</h3>
+                <p class="product-size">100 جم</p>
+                    <span class="price">110 ج.م</span>
+                    <a href="product.html?id=7" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="7">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9%20%28100%20%D8%AC%D9%85%29%20-%20110%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="8" data-category="body">
+                <a href="product.html?id=8" class="product-img"><img src="images/Body-products/img(7).jpeg" alt="الطمي المغربي (الغاسول) (250 جم)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>الطمي المغربي (الغاسول)</h3>
+                <p class="product-size">250 جم</p>
+                    <span class="price">80 ج.م</span>
+                    <a href="product.html?id=8" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="8">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D8%B7%D9%85%D9%8A%20%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%20%28%D8%A7%D9%84%D8%BA%D8%A7%D8%B3%D9%88%D9%84%29%20%28250%20%D8%AC%D9%85%29%20-%2080%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="9" data-category="body">
+                <a href="product.html?id=9" class="product-img"><img src="images/Body-products/img(8).jpeg" alt="الصابون المغربي (250 جم)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>الصابون المغربي</h3>
+                <p class="product-size">250 جم</p>
+                    <span class="price">100 ج.م</span>
+                    <a href="product.html?id=9" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="9">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D8%B5%D8%A7%D8%A8%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%20%28250%20%D8%AC%D9%85%29%20-%20100%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="10" data-category="body">
+                <a href="product.html?id=10" class="product-img"><img src="images/Body-products/img(9).jpeg" alt="الليفة المغربية (ليفة كسّال خلود الأصلية)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>الليفة المغربية (ليفة كسّال خلود الأصلية)</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=10" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="10">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D9%84%D9%8A%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9%20%28%D9%84%D9%8A%D9%81%D8%A9%20%D9%83%D8%B3%D9%91%D8%A7%D9%84%20%D8%AE%D9%84%D9%88%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B5%D9%84%D9%8A%D8%A9%29%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="11" data-category="body">
+                <a href="product.html?id=11" class="product-img"><img src="images/Body-products/img(10).jpeg" alt="الدلكة المغربية (150 جم)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>الدلكة المغربية</h3>
+                <p class="product-size">150 جم</p>
+                    <span class="price">140 ج.م</span>
+                    <a href="product.html?id=11" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="11">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D8%AF%D9%84%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9%20%28150%20%D8%AC%D9%85%29%20-%20140%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="12" data-category="body">
+                <a href="product.html?id=12" class="product-img"><img src="images/Body-products/img(11).jpeg" alt="ديودرانت رول أون" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>ديودرانت رول أون</h3>
+                    <span class="price">115 ج.م</span>
+                    <a href="product.html?id=12" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="12">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%AF%D9%8A%D9%88%D8%AF%D8%B1%D8%A7%D9%86%D8%AA%20%D8%B1%D9%88%D9%84%20%D8%A3%D9%88%D9%86%20-%20115%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== مستحضرات تجميلية ===== -->
+            <div class="product-card" data-id="13" data-category="beauty">
+                <a href="product.html?id=13" class="product-img"><img src="images/Cosmetic-products/img(12).jpeg" alt="كحل الأثمد والغنجي" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>كحل الأثمد والغنجي</h3>
+                    <span class="price">160 ج.م</span>
+                    <a href="product.html?id=13" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="13">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%83%D8%AD%D9%84%20%D8%A7%D9%84%D8%A3%D8%AB%D9%85%D8%AF%20%D9%88%D8%A7%D9%84%D8%BA%D9%86%D8%AC%D9%8A%20-%20160%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="14" data-category="beauty">
+                <a href="product.html?id=14" class="product-img"><img src="images/Cosmetic-products/img(13).jpeg" alt="بادي سبلاش - باث اند بادي" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بادي سبلاش - باث اند بادي</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=14" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="14">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%A7%D8%AF%D9%8A%20%D8%B3%D8%A8%D9%84%D8%A7%D8%B4%20-%20%D8%A8%D8%A7%D8%AB%20%D8%A7%D9%86%D8%AF%20%D8%A8%D8%A7%D8%AF%D9%8A%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="36" data-category="beauty">
+                <a href="product.html?id=36" class="product-img"><img src="images/Cosmetic-products/img(13).jpeg" alt="بادي سبلاش - ستروبري باوند كيك" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بادي سبلاش - ستروبري باوند كيك</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=36" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="36">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%A7%D8%AF%D9%8A%20%D8%B3%D8%A8%D9%84%D8%A7%D8%B4%20-%20%D8%B3%D8%AA%D8%B1%D9%88%D8%A8%D8%B1%D9%8A%20%D8%A8%D8%A7%D9%88%D9%86%D8%AF%20%D9%83%D9%8A%D9%83%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="37" data-category="beauty">
+                <a href="product.html?id=37" class="product-img"><img src="images/Cosmetic-products/img(13).jpeg" alt="بادي سبلاش - ياسمين" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بادي سبلاش - ياسمين</h3>
+                    <span class="price">90 ج.م</span>
+                    <a href="product.html?id=37" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="37">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%A7%D8%AF%D9%8A%20%D8%B3%D8%A8%D9%84%D8%A7%D8%B4%20-%20%D9%8A%D8%A7%D8%B3%D9%85%D9%8A%D9%86%20-%2090%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="38" data-category="beauty">
+                <a href="product.html?id=38" class="product-img"><img src="images/Cosmetic-products/img(13).jpeg" alt="بادي سبلاش - مسك الرمان" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>بادي سبلاش - مسك الرمان</h3>
+                    <span class="price">160 ج.م</span>
+                    <a href="product.html?id=38" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="38">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A8%D8%A7%D8%AF%D9%8A%20%D8%B3%D8%A8%D9%84%D8%A7%D8%B4%20-%20%D9%85%D8%B3%D9%83%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%86%20-%20160%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== الشعر ===== -->
+            <div class="product-card" data-id="15" data-category="hair">
+                <a href="product.html?id=15" class="product-img"><img src="images/Skincare-products/img(27).jpeg" alt="كريم تصفيف الشعر (للتقصف والهيشان) (100 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>كريم تصفيف الشعر (للتقصف والهيشان)</h3>
+                <p class="product-size">100 مل</p>
+                    <span class="price">140 ج.م</span>
+                    <a href="product.html?id=15" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="15">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%83%D8%B1%D9%8A%D9%85%20%D8%AA%D8%B5%D9%81%D9%8A%D9%81%20%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%28%D9%84%D9%84%D8%AA%D9%82%D8%B5%D9%81%20%D9%88%D8%A7%D9%84%D9%87%D9%8A%D8%B4%D8%A7%D9%86%29%20%28100%20%D9%85%D9%84%29%20-%20140%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="17" data-category="hair">
+                <a href="product.html?id=17" class="product-img"><img src="images/Hair-products/img(14).jpeg" alt="السدر المغربي" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>السدر المغربي</h3>
+                    <span class="price">110 ج.م</span>
+                    <a href="product.html?id=17" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="17">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D9%84%D8%B3%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%20-%20110%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="18" data-category="hair">
+                <a href="product.html?id=18" class="product-img"><img src="images/Hair-products/img(15).jpeg" alt="ميكس الزيوت التحفيزية" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>ميكس الزيوت التحفيزية</h3>
+                    <span class="price">120 ج.م</span>
+                    <a href="product.html?id=18" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="18">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%85%D9%8A%D9%83%D8%B3%20%D8%A7%D9%84%D8%B2%D9%8A%D9%88%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AD%D9%81%D9%8A%D8%B2%D9%8A%D8%A9%20-%20120%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="19" data-category="hair">
+                <a href="product.html?id=19" class="product-img"><img src="images/Hair-products/img(16).jpeg" alt="زيت شعر الأطفال" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>زيت شعر الأطفال</h3>
+                    <span class="price">120 ج.م</span>
+                    <a href="product.html?id=19" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="19">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B2%D9%8A%D8%AA%20%D8%B4%D8%B9%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20-%20120%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="20" data-category="hair">
+                <a href="product.html?id=20" class="product-img"><img src="images/Hair-products/img(17).jpeg" alt="اسبراي الحصان" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>اسبراي الحصان</h3>
+                    <span class="price">140 ج.م</span>
+                    <a href="product.html?id=20" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="20">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D8%B3%D8%A8%D8%B1%D8%A7%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D8%A7%D9%86%20-%20140%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="21" data-category="hair">
+                <a href="product.html?id=21" class="product-img"><img src="images/Hair-products/img(18).jpeg" alt="اسبراي الرادنسل" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>اسبراي الرادنسل</h3>
+                    <span class="price">320 ج.م</span>
+                    <a href="product.html?id=21" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="21">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%A7%D8%B3%D8%A8%D8%B1%D8%A7%D9%8A%20%D8%A7%D9%84%D8%B1%D8%A7%D8%AF%D9%86%D8%B3%D9%84%20-%20320%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="22" data-category="hair">
+                <a href="product.html?id=22" class="product-img"><img src="images/Hair-products/img(19).jpeg" alt="زيت التصفيف اليومي" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>زيت التصفيف اليومي</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=22" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="22">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B2%D9%8A%D8%AA%20%D8%A7%D9%84%D8%AA%D8%B5%D9%81%D9%8A%D9%81%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="23" data-category="hair">
+                <a href="product.html?id=23" class="product-img"><img src="images/Hair-products/img(20).jpeg" alt="شامبو الترطيب (رمان)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>شامبو الترطيب (رمان)</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=23" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="23">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B4%D8%A7%D9%85%D8%A8%D9%88%20%D8%A7%D9%84%D8%AA%D8%B1%D8%B7%D9%8A%D8%A8%20%28%D8%B1%D9%85%D8%A7%D9%86%29%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="24" data-category="hair">
+                <a href="product.html?id=24" class="product-img"><img src="images/Hair-products/img(21).jpeg" alt="حمام كريم بالكولاجين" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>حمام كريم بالكولاجين</h3>
+                    <span class="price">160 ج.م</span>
+                    <a href="product.html?id=24" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="24">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%AD%D9%85%D8%A7%D9%85%20%D9%83%D8%B1%D9%8A%D9%85%20%D8%A8%D8%A7%D9%84%D9%83%D9%88%D9%84%D8%A7%D8%AC%D9%8A%D9%86%20-%20160%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="25" data-category="hair">
+                <a href="product.html?id=25" class="product-img"><img src="images/Hair-products/img(22).jpeg" alt="سيروم الأرجان" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>سيروم الأرجان</h3>
+                    <span class="price">150 ج.م</span>
+                    <a href="product.html?id=25" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="25">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B3%D9%8A%D8%B1%D9%88%D9%85%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AC%D8%A7%D9%86%20-%20150%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="26" data-category="hair">
+                <a href="product.html?id=26" class="product-img"><img src="images/Hair-products/img(23).jpeg" alt="شامبو القشرة (200 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>شامبو القشرة</h3>
+                <p class="product-size">200 مل</p>
+                    <span class="price">140 ج.م</span>
+                    <a href="product.html?id=26" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="26">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B4%D8%A7%D9%85%D8%A8%D9%88%20%D8%A7%D9%84%D9%82%D8%B4%D8%B1%D8%A9%20%28200%20%D9%85%D9%84%29%20-%20140%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="39" data-category="hair">
+                <a href="product.html?id=39" class="product-img"><img src="images/Hair-products/img(23).jpeg" alt="شامبو القشرة (120 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>شامبو القشرة</h3>
+                <p class="product-size">120 مل</p>
+                    <span class="price">90 ج.م</span>
+                    <a href="product.html?id=39" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="39">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B4%D8%A7%D9%85%D8%A8%D9%88%20%D8%A7%D9%84%D9%82%D8%B4%D8%B1%D8%A9%20%28120%20%D9%85%D9%84%29%20-%2090%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== أماكن حساسة ===== -->
+            <div class="product-card" data-id="27" data-category="sensitive">
+                <a href="product.html?id=27" class="product-img"><img src="images/Sensitive-areas/img(24).jpeg" alt="كريم تفتيح المناطق الحساسة" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>كريم تفتيح المناطق الحساسة</h3>
+                    <span class="price">170 ج.م</span>
+                    <a href="product.html?id=27" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="27">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%83%D8%B1%D9%8A%D9%85%20%D8%AA%D9%81%D8%AA%D9%8A%D8%AD%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9%20-%20170%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="28" data-category="sensitive">
+                <a href="product.html?id=28" class="product-img"><img src="images/Sensitive-areas/img(25).jpeg" alt="غسول المناطق الحساسة" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>غسول المناطق الحساسة</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=28" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="28">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%BA%D8%B3%D9%88%D9%84%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="29" data-category="sensitive">
+                <a href="product.html?id=29" class="product-img"><img src="images/Sensitive-areas/img(26).jpeg" alt="مرطب المناطق الحساسة" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>مرطب المناطق الحساسة</h3>
+                    <span class="price">100 ج.م</span>
+                    <a href="product.html?id=29" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="29">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%85%D8%B1%D8%B7%D8%A8%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9%20-%20100%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== البشرة ===== -->
+            <div class="product-card" data-id="30" data-category="skin">
+                <a href="product.html?id=30" class="product-img"><img src="images/Skincare-products/img(28).jpeg" alt="صن بلوك SPF 50+" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>صن بلوك SPF 50+</h3>
+                    <span class="price">180 ج.م</span>
+                    <a href="product.html?id=30" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="30">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%B5%D9%86%20%D8%A8%D9%84%D9%88%D9%83%20SPF%2050%2B%20-%20180%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="31" data-category="skin">
+                <a href="product.html?id=31" class="product-img"><img src="images/Skincare-products/img(29).jpeg" alt="مرطب شفاه" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>مرطب شفاه</h3>
+                    <span class="price">40 ج.م</span>
+                    <a href="product.html?id=31" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="31">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%85%D8%B1%D8%B7%D8%A8%20%D8%B4%D9%81%D8%A7%D9%87%20-%2040%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="32" data-category="skin">
+                <a href="product.html?id=32" class="product-img"><img src="images/Skincare-products/img(30).jpeg" alt="كريم نضارة وتفتيح (نياسيناميد)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>كريم نضارة وتفتيح (نياسيناميد)</h3>
+                    <span class="price">170 ج.م</span>
+                    <a href="product.html?id=32" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="32">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%83%D8%B1%D9%8A%D9%85%20%D9%86%D8%B6%D8%A7%D8%B1%D8%A9%20%D9%88%D8%AA%D9%81%D8%AA%D9%8A%D8%AD%20%28%D9%86%D9%8A%D8%A7%D8%B3%D9%8A%D9%86%D8%A7%D9%85%D9%8A%D8%AF%29%20-%20170%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="33" data-category="skin">
+                <a href="product.html?id=33" class="product-img"><img src="images/Skincare-products/img(31).jpeg" alt="غسول للبشرة المختلطة والدهنية" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>غسول للبشرة المختلطة والدهنية</h3>
+                    <span class="price">130 ج.م</span>
+                    <a href="product.html?id=33" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="33">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D8%BA%D8%B3%D9%88%D9%84%20%D9%84%D9%84%D8%A8%D8%B4%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D8%B7%D8%A9%20%D9%88%D8%A7%D9%84%D8%AF%D9%87%D9%86%D9%8A%D8%A9%20-%20130%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-id="34" data-category="skin">
+                <a href="product.html?id=34" class="product-img"><img src="images/Skincare-products/img(32).jpeg" alt="مرطب للبشرة (50 مل)" loading="lazy"></a>
+                <div class="product-info">
+                    <h3>مرطب للبشرة</h3>
+                <p class="product-size">50 مل</p>
+                    <span class="price">100 ج.م</span>
+                    <a href="product.html?id=34" class="btn-details">التفاصيل</a>
+                    <div class="card-actions">
+                        <button type="button" class="btn-add" data-add="34">إضافة للسلة</button>
+                        <a href="https://wa.me/201102523873?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B7%D9%84%D8%A8%3A%20%D9%85%D8%B1%D8%B7%D8%A8%20%D9%84%D9%84%D8%A8%D8%B4%D8%B1%D8%A9%20%2850%20%D9%85%D9%84%29%20-%20100%20%D8%AC.%D9%85" target="_blank" rel="noopener" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <p class="no-results" id="noResults" hidden>لا توجد منتجات مطابقة لبحثك.</p>
+        </div>
+    </section>
+
+    <section class="pre-footer">
+        <div class="container">
+            <div class="pf-features">
+                <div class="pf-item"><span class="pf-icon"><i class="fa-solid fa-leaf"></i></span><h4>طبيعي 100%</h4><p>مكونات طبيعية بعناية لبشرتك وشعرك</p></div>
+                <div class="pf-item"><span class="pf-icon"><i class="fa-solid fa-truck-fast"></i></span><h4>توصيل لحد باب البيت</h4><p>بنوصّلك طلبك بأمان وبسرعة</p></div>
+                <div class="pf-item"><span class="pf-icon"><i class="fa-brands fa-whatsapp"></i></span><h4>اطلبي بسهولة</h4><p>أكدي طلبك مباشرة على الواتساب</p></div>
+                <div class="pf-item"><span class="pf-icon"><i class="fa-solid fa-heart"></i></span><h4>مصنوعة بحب</h4><p>عناية بتحسسك بالفرق من أول استخدام</p></div>
+            </div>
+ 
+            <div class="pf-cta">
+                <div class="pf-cta-text">
+                    <h2>جاهزة تبدئي رحلة جمالك الطبيعي؟ 🌿</h2>
+                    <p>كلمينا على واتساب ونساعدك تختاري المنتج المناسب لبشرتك وشعرك.</p>
+                </div>
+                <div class="pf-cta-btns">
+                    <a href="https://wa.me/201102523873" target="_blank" rel="noopener" class="pf-btn pf-btn-wa"><i class="fa-brands fa-whatsapp"></i> تواصلي معنا</a>
+                    <a href="#products" class="pf-btn pf-btn-light">تصفحي المنتجات</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (تم إضافته هنا) -->
+    <footer class="main-footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Lena <span>Natural</span></h3>
+                <p>وجهتك الأولى لمنتجات العناية الطبيعية المستوحاة من سحر الطبيعة لنشر الجمال والثقة.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1CojQmh4c3/" aria-label="فيس بوك"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lena_natural_products_?stkn=MTZ4OGcxOGtwcW82dQ==" aria-label="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/201102523873" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="checkout.html">سلة التسوق</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <p><i class="fa-solid fa-phone"></i> +20 110 252 3873</p>
+                <p><i class="fa-solid fa-envelope"></i> maielsbawy819@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> القاهرة، مصر</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة  2026 Lena Natural Products</p>
+            <span>تم التطوير بواسطه [Mohammed soudi]</span>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status"></div>
+    <script src="products-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
