@@ -391,7 +391,7 @@ const PRODUCTS = [
     "short": "",
     "price": 120,
     "category": "hair",
-    "image": "images/Hair-products/img(15).jpeg",
+    "image": "images/Hair-products/img(19).jpeg",
     "details": {
       "intro": [
         "ميكس زيوت طبيعية للعناية بفروة الرأس والشعر: تغذية وترطيب وعناية بالفروة."
@@ -475,7 +475,7 @@ const PRODUCTS = [
     "short": "",
     "price": 130,
     "category": "hair",
-    "image": "images/Hair-products/img(19).jpeg",
+    "image": "images/Hair-products/img(15).jpeg",
     "details": {
       "intro": [
         "شعر انسيابي ولمعة حلوة كل يوم."
