@@ -596,7 +596,7 @@ const PRODUCTS = [
     "id": 40,
     "name": "لوشن القشرة",
     "short": "",
-    "price": 70,
+    "price": 120,
     "category": "hair",
     "image": "images/Hair-products/img(50).jpeg",
     "details": {

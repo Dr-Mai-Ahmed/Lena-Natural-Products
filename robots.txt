@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /checkout.html
+
+Sitemap: https://dr-mai-ahmed.github.io/Lena-Natural-Products/sitemap.xml
